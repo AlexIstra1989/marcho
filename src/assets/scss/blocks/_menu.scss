@@ -1,0 +1,51 @@
+.menu {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 40px 0;
+ background-color: $primaryColor;
+ &__list {
+  display: flex;
+ }
+ &__item {
+  &:not(:last-child) {
+   margin-right: 40px;
+  }
+ }
+ &__link {
+  @include text (16px, 1.2, $titleColor);
+  @extend %roboto-400;
+  transition: color 0.5s ease, border-bottom 0.5s ease;
+  &:hover {
+   @include text (16px, 1.2, $secondaryColor); 
+   @extend %roboto-700;
+   border-bottom: 1px solid $secondaryColor;
+  }
+ }
+ &__link--active {
+  @extend %roboto-700;
+  color: $secondaryColor;
+  border-bottom: 1px solid $secondaryColor; 
+ }
+ &__user {
+  display: flex;
+  position: relative;
+ }
+ &__user-link {
+  position: relative;
+  &:not(:last-child) {
+   margin-right: 25px;
+  }
+ }
+ &__user-num {
+  position: absolute;
+  @include text (12px, 1.2, $primaryColor);
+  @include flex (center, center);
+  width: 20px;
+  height: 20px;
+  background-color: $secondaryColor;
+  border-radius: 50%;
+  left: 18px;
+  top: -10px;
+ }
+}

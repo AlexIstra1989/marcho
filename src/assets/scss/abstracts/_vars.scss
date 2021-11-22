@@ -1,0 +1,31 @@
+$primaryColor: #FFF;
+$secondaryColor: #FE3E57;
+$titleColor: #29282D;;
+$textColor:#8D8D8D;;
+
+$breakpoints: (
+ sm: 576px,
+ md: 768px,
+ lg: 1280px,
+ xl: 1440px,
+);
+
+%quicksand-400 {
+ font-family: "Quicksand-Regular", sans-serif;
+ font-weight: 400;
+}
+
+%quicksand-500 {
+ font-family: "Quicksand-Medium", sans-serif;
+ font-weight: 500;
+}
+
+%roboto-400 {
+ font-family: "Roboto-Regular", sans-serif;
+ font-weight: 400;
+}
+
+%roboto-700 {
+ font-family: "Roboto-Bold", sans-serif;
+ font-weight: 700;
+}

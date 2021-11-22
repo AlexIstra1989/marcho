@@ -1,0 +1,26 @@
+@mixin text($fontSize, $lineHeight, $color) {
+ font-size: $fontSize;
+ line-height: $lineHeight;
+ color: $color;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+ content: $content;
+ display: $display;
+ position: $pos;
+}
+
+@mixin background ($img) {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: $img;
+}
+
+@mixin flex ($justify-content: null, $align-items: null, $flex-wrap:null, $flex-direction: null) {
+	display: flex;
+	justify-content: $justify-content;
+	align-items: $align-items;
+	flex-wrap: $flex-wrap;
+	flex-direction: $flex-direction;
+}
