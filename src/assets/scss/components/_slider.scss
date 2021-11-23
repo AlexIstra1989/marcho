@@ -1,9 +1,68 @@
 .slider {
+ background-color: $bg;
+ padding-top: 60px;
+ &__container {
+  max-width: 1560px;
+ }
  &__inner {
   
  }
  &__item {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+ }
+ &__content {
+  padding-left: 175px;
+ }
+ &__title {
+ @include text (58px, 1.1, $titleColor);
+ @extend %roboto-700;
+ max-width: 670px;
+ width: 100%;
+ margin-bottom: 40px;
+ }
+ &__text {
+  max-width: 465px;
+  width: 100%;
+  margin-bottom: 60px;
+ }
+ &__link {
+  @extend %btn;
+  padding: 19px 35px;
+ }
+ .slick-dots {
   display: flex;
+  justify-content: center;
+   li {
+
+     button {
+      padding: 0;
+      font-size: 0;
+      background: transparent;
+      width: 27px;
+      height: 27px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      // border-color: $textColor;
+      position: relative;
+       &::before {
+        @include pseudo;
+        top: 10px;
+        left: 10px;
+        width: 6px;
+        height: 6px;
+        background-color: $textColor;
+        border-radius: 50%;
+       }
+     }
+     &.slick-active {
+      button {
+       border-color: $secondaryColor;
+      }
+     }
+   }
+
  }
 
 }
