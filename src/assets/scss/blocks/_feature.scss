@@ -1,0 +1,20 @@
+.feature {
+ padding: 180px 0;
+  &__inner {
+  @include flex (space-around, null, wrap, null);
+  }
+  &__item {
+   max-width: 370px;
+  }
+  &__image {
+   margin-bottom: 40px;
+  }
+  &__item-title {
+   @include text (22px, 1.2, $titleColor);
+   @extend %roboto-400;
+   margin-bottom: 18px;
+  }
+  &__item-text {
+   max-width: 285px;
+  }
+}

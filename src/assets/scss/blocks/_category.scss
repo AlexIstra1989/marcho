@@ -1,0 +1,11 @@
+.category {
+ text-align: center;
+ &__title {
+  @include text (48px, 1.8, $titleColor);
+  @extend %roboto-700;
+  margin-bottom: 30px;
+ }
+ &__text {
+  max-width: 520px;
+ }
+}

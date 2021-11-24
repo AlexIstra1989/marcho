@@ -1,11 +1,11 @@
 .slider {
+ background-image: url("../images/slider/slider-bg.png");
+ background-repeat: no-repeat;
+ background-size: cover;
  background-color: $bg;
- padding-top: 60px;
+ padding: 65px 0 40px;
  &__container {
   max-width: 1560px;
- }
- &__inner {
-  
  }
  &__item {
   display: flex !important;
@@ -30,12 +30,18 @@
  &__link {
   @extend %btn;
   padding: 19px 35px;
+  transition: color 0.7s ease;
+  &:hover {
+   background-color: $primaryColor;
+   color: $secondaryColor;
+  }
  }
  .slick-dots {
   display: flex;
   justify-content: center;
+  margin-top: -70px; 
    li {
-
+     padding: 0 5px;
      button {
       padding: 0;
       font-size: 0;
@@ -44,12 +50,12 @@
       height: 27px;
       border: 1px solid transparent;
       border-radius: 50%;
-      // border-color: $textColor;
       position: relative;
        &::before {
         @include pseudo;
-        top: 10px;
-        left: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 6px;
         height: 6px;
         background-color: $textColor;
@@ -59,10 +65,11 @@
      &.slick-active {
       button {
        border-color: $secondaryColor;
+       &::before {
+        background-color: $secondaryColor;
+       }
       }
      }
    }
-
  }
-
 }
