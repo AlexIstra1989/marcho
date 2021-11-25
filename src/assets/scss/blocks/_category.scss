@@ -7,5 +7,31 @@
  }
  &__text {
   max-width: 520px;
+  margin: 0 auto 60px;
+ }
+ &__inner {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 303px);
+   gap: 30px;
+ }
+ &__box-discount {
+  background-image: url("../images/discount-bg.png");
+  grid-area: 1/1/3/2;
+ }
+ &__box-arrival {
+  background-image: url("../images/arrival-bg.png");
+  grid-area: 1/2/2/4;
+ }
+ &__box-trending {
+  background-image: url("../images/trend-bg.png");
+  grid-area: 2/2/3/3;
+ }
+ &__box-collection {
+  background-image: url("../images/collection-bg.png");
+  grid-area: 2/3/3/4;
+ }
+ &__text {
+   
  }
 }
