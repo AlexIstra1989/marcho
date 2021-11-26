@@ -1,5 +1,6 @@
 .category {
  text-align: center;
+ padding-bottom: 120px;
  &__title {
   @include text (48px, 1.8, $titleColor);
   @extend %roboto-700;
@@ -15,23 +16,69 @@
    grid-template-rows: repeat(2, 303px);
    gap: 30px;
  }
- &__box-discount {
+ &__discount {
   background-image: url("../images/discount-bg.png");
   grid-area: 1/1/3/2;
  }
- &__box-arrival {
+ &__discount-box {
+  padding: 40px 0 0 40px;
+  max-width: 221px;
+  width: 100%;
+  text-align: left;
+ }
+ &__arrival {
   background-image: url("../images/arrival-bg.png");
   grid-area: 1/2/2/4;
  }
- &__box-trending {
+ &__arrival-box {
+  padding: 110px 0 110px 40px;
+  max-width: 278px;
+  width: 100%;
+  text-align: left;
+ }
+ &__trending {
   background-image: url("../images/trend-bg.png");
   grid-area: 2/2/3/3;
  }
- &__box-collection {
+ &__trending-box {
+  padding: 40px 0 0 40px;
+  max-width: 221px;
+  width: 100%;
+  text-align: left;
+ }
+ &__collection {
   background-image: url("../images/collection-bg.png");
   grid-area: 2/3/3/4;
  }
- &__text {
-   
+ &__collection-box {
+  padding: 40px 0 0 40px;
+  max-width: 221px;
+  width: 100%;
+  text-align: left;
+ }
+ &__subtitle {
+  @include text (16px, 1.6, $titleColor);
+  margin-bottom: 15px;
+ }
+ &__subtitle--purple {
+  color: #5800e4;
+ }
+ &__subtitle--red {
+  color: #fe3e57;
+ }
+ &__subtitle--yellow {
+  color: #ffb534;
+ }
+ &__subtitle--blue {
+  color: #34c3ff;
+ }
+ &__title-box {
+  @include text (22px, 1.1, $titleColor);
+  @extend %roboto-700;
+  margin-bottom: 20px; 
+ }
+ &__link {
+  @extend %roboto-400;
+  letter-spacing: 0.05em;
  }
 }

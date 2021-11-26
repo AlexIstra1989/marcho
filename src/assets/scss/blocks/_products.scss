@@ -1,0 +1,15 @@
+.products {
+ padding: 120px 0;
+ &__title {
+  @include text (48px, 1.8, $titleColor);
+  @extend %roboto-700;
+  margin-bottom: 30px;
+  text-align: center;
+ }
+ &__text {
+  margin: 0 auto 60px;
+  max-width: 565px;
+  width: 100%;
+  text-align: center;
+ }
+}

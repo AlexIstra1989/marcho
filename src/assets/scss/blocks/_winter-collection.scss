@@ -1,0 +1,66 @@
+.winter-collection {
+ @include background (url("../images/winter-bg.png"));
+ padding: 120px 0;
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__video {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 535px;
+  width: 100%;
+  height: 480px; 
+  position: relative;
+  &::before,
+  &::after {
+   @include pseudo;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 110px;
+   height: 110px;
+   background: linear-gradient(to right, rgba(254, 62, 87, 1), rgba(254, 62, 87, 0.2));
+   border-radius: 50%;
+   // background: radial-gradient(circle at 100% rgba(254, 62, 87, 1), 50% rgba(254, 62, 87, 0.6), 75% rgba(254, 62, 87, 0.2));
+   &:hover {
+    transform: translate(-50%, -50%) scale(0.6);
+   }
+  }
+  &::after {
+   @include background (url(" ../images/icons/play.svg"));
+   width: 16px;
+   height: 20px;
+  }
+ }
+ &__box {
+  @include flex (center, null, null, column);
+  max-width: 545px;
+  width: 100%;
+ }
+ &__subtitle {
+  @include text (22px, 1.1, $secondaryColor);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+ }
+ &__title {
+  @include text (48px, 1.8, $titleColor);
+  @extend %roboto-700;
+  margin-bottom: 40px;
+ }
+ &__text {
+  margin-bottom: 60px;
+ }
+ &__link {
+  @extend %btn;
+  padding: 19px 29px;
+  max-width: 160px;
+  width: 100%;
+  transition: color 0.7s ease;
+  &:hover {
+   background-color: $primaryColor;
+   color: $secondaryColor;
+  }
+ }
+}
