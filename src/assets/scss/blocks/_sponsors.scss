@@ -1,0 +1,12 @@
+.sponsors {
+ background-color: $primaryColor;
+ padding: 120px 0;
+ &__list {
+  display: flex;
+ }
+ &__item {
+  &:not(:last-child) {
+   margin-right: 150px;
+  }
+ }
+}

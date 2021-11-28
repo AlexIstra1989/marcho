@@ -1,0 +1,77 @@
+.blog {
+ background-color: $primaryColor;
+ padding-bottom: 165px;
+ &__title {
+  @include text (48px, 1.8, $titleColor);
+  text-align: center;
+  margin-bottom: 29px;
+ }
+ &__text {
+  max-width: 557px;
+  width: 100%;
+  margin: 0 auto 55px;
+  text-align: center;
+ }
+ &__inner {
+  display: flex;
+ }
+ &__item {
+  border: 1px solid #ececec;
+  padding-bottom: 29px;
+  &:not(:last-child) {
+   margin-right: 30px;
+  }
+ }
+ &__image {
+  margin-bottom: 30px;
+ }
+ &__content {
+  text-align: left;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+ }
+ &__admin {
+  margin-right: 77px;
+  margin-left: 24px;
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background (url("../images/icons/user.svg"));
+   width: 20px;
+   height: 20px;
+   left: -23px;
+   bottom: 4px;
+  }
+ }
+ &__date {
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background (url("../images/icons/time.png"));
+   width: 20px;
+   height: 20px;
+   left: -23px;
+   bottom: 0; 
+  }
+ }
+ &__content-text {
+  @include text (22px, 1.4, $titleColor);
+  margin: 24px 0;
+ }
+ &__link {
+  position: relative;
+  transition: color 0.5s ease;
+  &::after {
+   @include pseudo;
+   @include background (url("../images/icons/arrow.png"));
+   width: 10px;
+   height: 8px;
+   right: -17px;
+   top: 5px;
+  }
+  &:hover {
+   color:$secondaryColor;
+  }
+ }
+}

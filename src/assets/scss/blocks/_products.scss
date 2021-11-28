@@ -52,8 +52,16 @@
   display: block;
   color: $titleColor;
   letter-spacing: 0.2em;
+  max-width: 185px;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
   padding: 19px 29px;
   border: 1px solid $secondaryColor;
+  transition: color 0.5s ease;
+  &:hover {
+   background-color: $secondaryColor;
+   color: $primaryColor;
+  }
  }
 }

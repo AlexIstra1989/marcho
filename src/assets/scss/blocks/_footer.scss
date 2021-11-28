@@ -1,0 +1,50 @@
+.footer {
+ background-color: $bg;
+ padding: 75px 0 25px;
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+   margin-right: 30px;
+  }
+ }
+ &__info {
+  max-width: 235px;
+  width: 100%;
+ }
+ &__contacts {
+  @include text (16px, 2.2, $textColor);
+  @extend %quicksand-500;
+  margin: 35px 0;
+ }
+ &__email {
+  display: block;
+ }
+ &__social-list {
+  display: flex;
+ }
+ &__social-item {
+  &:not(:last-child) {
+   margin-right: 20px;
+  }
+ }
+ &__links {
+  max-width: 145px;
+  width: 100%;
+ }
+ &__account {
+  max-width: 130px;
+  width: 100%;
+ }
+ &__title {
+  @include text (22px, 1.6, $titleColor);
+ }
+ &__link {
+  @include text (16px, 2.2, $textColor);
+  @extend %quicksand-500;
+ }
+ &__subscribe {
+  max-width: 460px;
+  width: 100%;
+ }
+}
