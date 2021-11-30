@@ -56,10 +56,53 @@
   @extend %quicksand-500;
  }
  &__subscribe {
-  max-width: 460px;
+  max-width: 482px;
   width: 100%;
  }
  &__text {
   margin-bottom: 30px;
+ }
+ &__form-input {
+  padding: 20px 105px 20px 17px;
+  margin-right: 10px;
+  border: transparent;
+  &::placeholder {
+   @include text (16px, 2.2, $textColor);
+  }
+ }
+ &__btn {
+  @include text (16px, 2.2, $primaryColor);
+  @extend %roboto-400;
+  @extend %btn;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.5s ease;
+  &:hover {
+   background-color: $primaryColor;
+   color: $secondaryColor;
+  }
+ }
+ &__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+ }
+ &__copyright-text,
+ &__pay {
+  @include text (12px, 2.8, $textColor);
+ }
+ &__copyright-box {
+  display: flex;
+  align-items: center;
+ }
+ &__pay {
+  margin-right: 25px;
+ }
+ &__image {
+  &:not(:last-child) {
+   margin-right: 25px;   
+  }
  }
 }

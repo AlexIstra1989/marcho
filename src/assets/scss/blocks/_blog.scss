@@ -71,7 +71,9 @@
    top: 5px;
   }
   &:hover {
-   color:$secondaryColor;
+   &::after{
+    color:$secondaryColor;
+   }
   }
  }
 }
