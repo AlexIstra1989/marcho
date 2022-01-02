@@ -6,13 +6,57 @@ body {
  @extend %quicksand-500; 
 }
 
+.title {
+ font-size: 48px;
+ line-height: 1.8;
+ color: $titleColor;
+}
+
 .container {
  max-width: 1200px;
  padding: 0 15px;
  margin: 0 auto;
 }
 
-.container {
- max-width: 1700px;
- margin: 0 auto;
-}
+.breadcrumbs {
+  &__list {
+   display: flex;
+   justify-content: center;
+  }
+  &__item {
+   &:not(:last-child) {
+    margin-right: 40px;
+    padding-left: 10px;
+   }
+  }
+  &__link {
+   color: $breadcrumbsColor;
+   line-height: 1.2;
+   position: relative;
+   transition: color 0.5s ease;
+    &:hover {
+     color: $secondaryColor;
+    }
+    &--home {
+     &::before {
+      @include background (url("../images/login/icon/home.svg"));
+      @include pseudo;
+      width: 16px;
+      height: 16px;
+      left: -25px;
+      top: 0;
+     }
+    }
+    &--next {
+     &::before {
+      @include background (url("../images/login/angle.svg"));
+      @include pseudo;
+      width: 9px;
+      height: 10px;
+      left: -25px;
+      top: 5px;
+     }
+    }
+  }
+ }
+

@@ -1,8 +1,8 @@
 @import "base/reset";
 @import "base/fonts";
-@import "base/global";
-@import "abstracts/mixins";
 @import "abstracts/vars";
+@import "abstracts/mixins";
+@import "base/global";
 @import "blocks/menu";
 @import "components/slider";
 @import "blocks/feature";
@@ -13,3 +13,5 @@
 @import "blocks/sponsors";
 @import "blocks/blog";
 @import "blocks/footer";
+@import "login-page/top";
+@import "login-page/registration";

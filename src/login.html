@@ -5,7 +5,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
  <link rel="stylesheet" href="assets/css/style.min.css">
  <title>MARCHO</title>
@@ -68,25 +68,47 @@
  <main class="main">
   <section class="top">
    <div class="top__container">
-    <div class="container">
-     <h2 class="top__title">
-      Log In
-     </h2>
-     <div class="breadcrumbs">
-      <ul class="breadcrumbs__list">
-       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="#">
-         Home
-        </a>
-       </li>
-       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="#">
-         Log in
-        </a>
-       </li>
-      </ul>
-     </div>
+    <h2 class="top__title title">
+     Log In
+    </h2>
+    <div class="breadcrumbs">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link breadcrumbs__link--home" href="#">
+        Home
+       </a>
+      </li>
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link breadcrumbs__link--next" href="#">
+        Log in
+       </a>
+      </li>
+     </ul>
     </div>
+   </div>
+  </section>
+
+  <section class="registration">
+   <div class="container">
+    <div class="registration__inner">
+     <div class="registration__buttons">
+      <button class="registration__btn" type="button">REGISTER</button>
+      <button class="registration__btn" type="button">LOGIN</button>
+     </div>
+     <form class="registration__form">
+      <p class="registration__text">Username or email address*</p>
+      <input class="registration__field" type="text">
+      <p class="registration__text">Password*</p>
+      <input class="registration__field" type="text">
+      <label class="registration__checkbox">
+       <input type="checkbox" checked>
+       Remember me
+      </label>
+      <button class="registration__btn-login" type="submit">Log in</button>
+      <a class="registration__link" href="#">Lost your password?</a>
+     </form>
+    </div>
+
    </div>
   </section>
 
@@ -268,4 +290,5 @@
  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

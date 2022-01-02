@@ -1,0 +1,15 @@
+.top {
+  &__container {
+   @include background (url("../images/login/login_bg.png"));
+   background-position: top center;
+   max-width: 1700px;
+   padding: 0 15px;
+   margin: 0 auto;
+   padding: 120px 0 130px;
+   text-align: center;
+  }
+  &__title {
+   @extend %roboto-400;
+   text-transform: uppercase;
+  }
+}
