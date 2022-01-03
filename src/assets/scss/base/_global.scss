@@ -19,44 +19,42 @@ body {
 }
 
 .breadcrumbs {
+ display: inline-flex;
+ justify-content: center;
+ padding-left: 25px;
+ position: relative;
+  &::before {
+   @include pseudo;
+   @include background (url("../images/login/icon/home.svg"));
+   width: 16px;
+   height: 16px;
+   left: 0;
+   top: 4px;
+  }
   &__list {
    display: flex;
-   justify-content: center;
   }
   &__item {
-   &:not(:last-child) {
-    margin-right: 40px;
-    padding-left: 10px;
+   color: $breadcrumbsColor;
+   padding-right: 40px;
+   position: relative;
+   &::after {
+    @include background (url("../images/login/angle.svg"));
+    @include pseudo;
+    width: 9px;
+    height: 10px;
+    right: 15px;
+    top: 9px;
+   }
+   &:last-child {
+    color: $secondaryColor;
+    padding-right: 0;
+    &::after {
+     display: none;
+    }
    }
   }
   &__link {
-   color: $breadcrumbsColor;
-   line-height: 1.2;
-   position: relative;
-   transition: color 0.5s ease;
-    &:hover {
-     color: $secondaryColor;
-    }
-    &--home {
-     &::before {
-      @include background (url("../images/login/icon/home.svg"));
-      @include pseudo;
-      width: 16px;
-      height: 16px;
-      left: -25px;
-      top: 0;
-     }
-    }
-    &--next {
-     &::before {
-      @include background (url("../images/login/angle.svg"));
-      @include pseudo;
-      width: 9px;
-      height: 10px;
-      left: -25px;
-      top: 5px;
-     }
-    }
+   color: inherit;
   }
  }
-

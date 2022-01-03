@@ -1,0 +1,69 @@
+.register {
+ max-width: 570px;
+ width: 100%;
+ padding: 120px 0;
+ margin: 0 auto;
+ &__links {
+  margin-bottom: 40px;
+  text-align: center;
+ }
+ &__link {
+  @include text (22px, 1.2, #909090);
+  @extend  %roboto-400;
+  transition: color 0.5s ease;
+  &--active {
+   color: $secondaryColor;
+  }
+  &:not(:last-child) {
+   margin-right: 60px;
+  }
+  &:hover {
+   color: $secondaryColor;
+  }
+ }
+ &__label {
+  margin-bottom: 30px;
+  display: block;
+ }
+ &__field {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: $bg;
+  border: none;
+  margin-bottom: 40px;
+  padding: 0 15px;
+ }
+ &__text {
+  margin-bottom: 30px;
+ }
+ &__checkbox {
+  display: block;
+  margin-bottom: 20px;
+ }
+ &__btn {
+  @extend %roboto-400;
+  display: block;
+  background-color: $titleColor;
+  color: $primaryColor;
+  width: 100%;
+  padding: 14px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease;
+  &:hover {
+   background-color: $textColor;
+   color: #292929;
+  }
+ }
+ &__error {
+  color: $textColor;
+  transition: color 0.5s ease;
+  &:hover {
+   color: $secondaryColor;
+  }
+ }
+ 
+}
