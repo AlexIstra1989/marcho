@@ -1,0 +1,36 @@
+.error {
+ background-color: $primaryColor;
+ padding: 120px 0;
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ &__content {
+  max-width: 565px;
+  width: 100%;
+  margin-right: 40px;
+ }
+ &__title {
+  margin-bottom: 20px;
+ }
+ &__text {
+  @include text (16px, 1.6, $textColor);
+  @extend %quicksand-500;
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 60px;
+ }
+ &__link {
+  @extend %roboto-400;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  padding: 14px 34px;
+  box-shadow: 0px 5px 25px 0px rgba(254,62,87,0.34);
+  transition: color 0.5s ease, background-color 0.5s ease;
+   &:hover {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+   }
+ }
+}
