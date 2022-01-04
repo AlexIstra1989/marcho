@@ -1,0 +1,11 @@
+.shop {
+ padding: 120px 0;
+ &__inner {
+  display: flex;
+ }
+ &__filters {
+  max-width: 370px;
+  width: 100%;
+  margin-right: 30px;
+ }
+}

@@ -1,0 +1,42 @@
+.filter-color {
+ &__label {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+ }
+ &__text {
+  padding-top: 20px;
+ }
+ &__input {
+  @extend %checkbox-hidden;
+  &:checked + .filter-color__checkbox {
+   @include background (url("../images/icons/checked.png"));
+  }
+ }
+ &__checkbox {
+   width: 16px;
+   height: 16px;
+   position: absolute;
+   margin-left: -16px;
+   margin-top: 27px;
+   &--blue {
+    background-color: #00aeef;
+   }
+   &--red {
+    background-color: #f52574;
+   }
+   &--green {
+    background-color: #24d4ac;
+   }
+   &--orange {
+    background-color: #ff7e00;
+   }
+   &--black {
+    background-color: #000000;
+   }
+   &--purple {
+    background-color: #923899;
+   }
+ }
+}

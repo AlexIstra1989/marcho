@@ -1,0 +1,23 @@
+.filter-category {
+ &__label {
+  display: block;
+  cursor: pointer;
+  &:not(last-child) {
+   margin-bottom: 15px;
+  }
+ }
+ &__input {
+  @extend %checkbox-hidden;
+  &:checked + .filter-category__checkbox {
+   background-color: $secondaryColor;
+   color: $primaryColor;
+  }
+
+ }
+ &__checkbox {
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg;
+  padding: 17px 20px 17px 20px;
+ }
+}
