@@ -1,13 +1,21 @@
 .filter-tags {
+ &__label {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 15px;
+   &:not(:last-child) {
+    margin-bottom: 20px;
+   }
+ }
  &__input {
   @extend %checkbox-hidden;
-  &:checked + .filter-tags__text {
+  &:checked + .filter-tags__checkbox {
    background-color: $secondaryColor;
+   color: $primaryColor;
   }
  }
  &__checkbox {
   border: 1px solid #8d8d8d;
-  display: inline-block;
   padding: 11px 17px;
  }
 }

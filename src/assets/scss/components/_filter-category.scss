@@ -2,7 +2,7 @@
  &__label {
   display: block;
   cursor: pointer;
-  &:not(last-child) {
+  &:not(:last-child) {
    margin-bottom: 15px;
   }
  }
