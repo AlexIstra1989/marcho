@@ -13,15 +13,34 @@
   text-align: center;
  }
  &__items {
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px 30px;
+  margin-bottom: 60px;
  }
  &__item {
   max-width: 370px;
+  &:hover {
+   .products__links {
+    transform: translateY(0);
+   }
+  }
+  &--sale {
+   .products__item-box::before {
+    content: "SALE";
+    position: absolute;
+    @extend %btn;
+    top: 10px;
+    left: 10px;
+    line-height: 1;
+   }
+  }
  }
- &__item__box {
+ &__item-box {
   position: relative;
   height: 370px;
-  
+  overflow: hidden;
+  margin-bottom: 25px;
  }
  &__links {
   position: absolute;
@@ -32,13 +51,15 @@
   height: 50px;
   margin: 0 auto;
   background-color: $primaryColor;
-  border: radius 22px;
+  border-radius: 22px;
   display: flex;
   align-items: center;
   justify-content: space-around;
- }
- &__link {
+  transform: translateY(300%);
   transition: all 0.5s;
+ }
+ &__item-link {
+  display: inherit;
   &:hover {
    path {
     fill: $secondaryColor;
@@ -52,7 +73,7 @@
     background-color: #ececec;
     width: 1px;
     height: 30px;
-    top: 0;
+    top: 10px;
    }
    &::before {
     left: 70px;
@@ -62,42 +83,28 @@
    }
   }
  }
- // &__box {
- //  display: flex;
- //  flex-wrap: wrap;
- //  margin-left: -30px;
- //  margin-bottom: 10px;
- // }
- // &__item {
- //  margin-left: 30px;
- //  margin-bottom: 50px; 
- //  display: flex;
- //  flex-direction: column;
- //  flex-basis: calc(33.3% - 30px);
- //  text-align: center;
- //  position: relative;
- // }
- // &__image {
- //  margin-bottom: 65px;
- // }
- // &__name {
- //  @include text (22px, 1.1, $titleColor);
- //  @extend %roboto-700;
- //  margin-bottom: 20px;
- // }
- // &__price {
- //  display: flex;
- //  justify-content: center;
- // }
- // &__price-new {
- //  color: $titleColor;
- //  @extend %roboto-700;
- // }
- // &__price-old {
- //  @extend %roboto-400;
- //  margin-left: 23px;
- //  text-decoration: line-through;
- // }
+  &__star {
+   margin: 0 auto;
+  }
+  &__name {
+  @include text (22px, 1.1, $titleColor);
+  @extend %roboto-700;
+  padding: 15px 0 20px;
+  text-align: center;
+  }
+  &__price {
+   display: flex;
+   justify-content: center;
+  }
+  &__price-new {
+   color: $titleColor;
+   @extend %roboto-700;
+  }
+  &__price-old {
+   @extend %roboto-400;
+   margin-left: 23px;
+   text-decoration: line-through;
+  }
   &__link {
    @extend %roboto-400;
    display: block;

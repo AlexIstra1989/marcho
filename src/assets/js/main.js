@@ -23,5 +23,10 @@ $('.filter-price__field').ionRangeSlider({
   $('.filter-price__to').text(data.to);
  },
 });
+ 
+ $(".products__star").rateYo({
+   rating: 3.6
+ });
+
 
 });
