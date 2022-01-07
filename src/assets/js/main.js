@@ -24,8 +24,12 @@ $('.filter-price__field').ionRangeSlider({
  },
 });
  
- $(".products__star").rateYo({
-   rating: 3.6
+ $('products__star').rateYo({
+   // rating: 3.6,
+   starWidth: "17px",
+   normalFill: "#ccccce",
+   retedFill: "#ffc35b"
+   
  });
 
 
