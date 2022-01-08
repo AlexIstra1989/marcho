@@ -19,4 +19,23 @@
   padding: 20px 25px 20px 30px;
   margin-bottom: 40px;
  }
+ &__content-buttons {
+  display: flex;
+  align-items: center;
+ }
+ &__content-btn {
+  margin-left: 15px;
+  line-height: 0;
+  cursor: pointer;
+  &.shop__content-btn--active {
+   path {
+    fill: $secondaryColor;
+   }
+  }
+ }
+ &__content-sort,
+ &__content-show {
+  border: none;
+  color: $textColor;
+ }
 }
