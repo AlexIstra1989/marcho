@@ -24,8 +24,10 @@
   align-items: center;
  }
  &__content-btn {
+  outline: none;
   margin-left: 15px;
   line-height: 0;
+  background-color: transparent;
   cursor: pointer;
   &.shop__content-btn--active {
    path {
@@ -37,5 +39,13 @@
  &__content-show {
   border: none;
   color: $textColor;
+ }
+ &__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .products__item {
+   margin-bottom: 40px;
+  }
  }
 }

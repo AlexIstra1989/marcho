@@ -8,6 +8,18 @@ $(document).ready(function() {
   slidesToScroll: 1,
  });
 
+ $('.button-list').on('click', function(){
+  $('.products__item').addClass('products__item--list');
+ });
+
+ $('.button-grid').on('click', function(){
+  $('.products__item').removeClass('products__item--list');
+ });
+
+ $('.shop__content-btn').on('click', function() {
+  $('.shop__content-btn').removeClass('shop__content-btn--active');
+  $(this).addClass('shop__content-btn--active');
+ });
 
 $('.filter-price__field').ionRangeSlider({
  type: "double",
@@ -25,11 +37,9 @@ $('.filter-price__field').ionRangeSlider({
 });
  
  $('products__star').rateYo({
-   // rating: 3.6,
    starWidth: "17px",
    normalFill: "#ccccce",
    retedFill: "#ffc35b"
-   
  });
 
 
