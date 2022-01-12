@@ -81,30 +81,37 @@ body {
    position: relative;
     &::before {
      @include pseudo;
-     
+     width: 5px;
+     height: 11px;
+     top: 7px;
     }
   }
   &__prev {
    margin-right: 40px;
+   padding-left: 15px;
+   &::before {
+    @include background (url("../images/arrow-left.svg"));
+    left: 0;
+   }
   }
   &__list {
    display: flex;
   }
   &__item {
-   &:nth-child(-n+2) {
-    margin-right: 30px;
-   }
-   &:nth-child(4) {
-    margin-left: 15px;
-   }
-   &:last-child {
-    margin-left: 15px;
-   }
+   padding: 0 15px;
   }
   &__link {
    color: $textColor;
   }
+  &__link--active {
+   color: $secondaryColor; 
+  }
   &__next {
+   padding-right: 15px;
    margin-left: 40px;
+    &::before {
+     @include background (url("../images/arrow-righ4.svg"));
+     right: 0;
+    }
   }
  }
