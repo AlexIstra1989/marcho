@@ -1,0 +1,16 @@
+.product {
+ padding: 120px 0 60px;
+ border-bottom: 1px solid #ececec;
+ &__item-inner {
+  display: flex;
+ }
+ &__slide {
+  max-width: 730px;
+  width: 100%;
+  margin-right: 70px;
+ }
+ &__content {
+  max-width: 370px;
+  width: 100%;
+ }
+}
