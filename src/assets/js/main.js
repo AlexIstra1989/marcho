@@ -1,4 +1,20 @@
 $(document).ready(function() {
+
+ $('.product__thumb').slick({
+  asNavFor: '.product__big',
+  focusOnSelect: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  vertical: true,
+  draggable: false
+ });
+ $('.product__big').slick({
+  asNavFor: '.product__thumb',
+  draggable: false,
+  arrows: false,
+  fade: true
+ });
+
  $('.slider__inner').slick ({
   dots: true,
   arrows: false,

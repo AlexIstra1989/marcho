@@ -13,4 +13,103 @@
   max-width: 370px;
   width: 100%;
  }
+ &__slide {
+  display: flex;
+ }
+ &__thumb {
+  width: 140px;
+  margin-right: 30px;
+ }
+ &__thumb-item {
+  margin-bottom: 30px;
+  width: 140px;
+  height: 140px;
+  cursor: pointer;
+   img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+  }
+ }
+ &__big {
+  width: 560px;
+   img {
+    width: 560px;
+    height: 650px;
+    object-fit: cover;
+   }
+ }
+ &__title {
+  @include text (22px, 1.5, $titleColor);
+  margin-bottom: 15px;
+ }
+ &__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+ }
+ &__price {
+  display: flex;
+ }
+ &__price-new {
+  @include text (18px, 1.8, $titleColor);
+  font-weight: 600;
+ }
+ &__price-old {
+  @include text (18px, 1.8, $textColor);
+  padding-left: 15px;
+  text-decoration: line-through;
+ }
+ &__star-item {
+  display: flex;
+  align-items: center;
+   span {
+    padding-left: 8px;
+    color: $titleColor;
+   }
+ }
+ &__text {
+  margin-bottom: 40px;
+  text-align: justify;
+   span {
+    display: block;
+    color: $titleColor;
+    margin-bottom: 9px;
+    @extend %roboto-700;
+   }
+ }
+
+
+
+
+
+ &__info {
+  max-width: 275px;
+  width: 100%;
+ }
+ &__list {
+  margin-bottom: 30px;
+ }
+ &__list-item {
+  display: flex;
+  margin-bottom: 5px;
+ }
+ &__list-title {
+  min-width: 100px;
+  color: $titleColor;
+ }
+ &__list-text {
+
+ }
+ &__list-link {
+   path {
+    fill: $textColor;
+   }
+   &:hover {
+    fill: $secondaryColor;
+   }
+ }
+ 
+
 }
