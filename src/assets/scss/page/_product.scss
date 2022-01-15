@@ -15,6 +15,10 @@
  }
  &__slide {
   display: flex;
+   .slick-vertical .slick-slide {
+    height: 140px;
+    margin-bottom: 30px;
+   }
  }
  &__thumb {
   width: 140px;
@@ -47,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
  }
  &__price {
   display: flex;
@@ -70,7 +74,7 @@
    }
  }
  &__text {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: justify;
    span {
     display: block;
@@ -79,11 +83,57 @@
     @extend %roboto-700;
    }
  }
-
-
-
-
-
+ &__color-filter {
+  margin-bottom: 30px;
+ }
+ &__color-title,
+ &__size-title {
+  @include text (18px, 1.4, $titleColor);
+  @extend %roboto-400;
+  margin-bottom: 5px;
+ }
+ &__color-input {
+  @extend %radio-hidden;
+   &:checked + .product__color-checkbox {
+    border-color: $secondaryColor;
+   }
+ }
+ &__color-checkbox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccccce;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: border-color 0.5s ease;
+   span {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 3px;
+   }
+ }
+ &__size-filter {
+  margin-bottom: 30px;
+ }
+ &__size-label {
+  margin-right: 10px;
+  display: inline-block;
+ }
+ &__size-input {
+  @extend %radio-hidden;
+  &:checked + .product__size-checkbox {
+   border-color: $secondaryColor;
+  }
+ }
+ &__size-checkbox {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #ccccce;
+ }
  &__info {
   max-width: 275px;
   width: 100%;
@@ -98,17 +148,76 @@
  &__list-title {
   min-width: 100px;
   color: $titleColor;
- }
- &__list-text {
-
+ } 
+ &__link {
+  color: $textColor;
  }
  &__list-link {
+   &:not(:last-child) {
+    margin-right: 8px;
+   }
    path {
     fill: $textColor;
    }
    &:hover {
-    fill: $secondaryColor;
+    path {
+     fill: $secondaryColor;
+    }
    }
+ }
+ &__input {
+  max-width: 100px;
+  width: 100%;
+  border: 1px solid #ececec;
+  margin-right: 15px;
+ }
+ &__btn {
+  @extend %btn;
+  border: none;
+  transition: color 0.5s ease, background-color 0.5s ease;
+  &:hover {
+   background-color: $primaryColor;
+   color: $secondaryColor;
+  }
+ }
+
+ .product-tabs {
+  padding-top: 120px;
+  &__top {
+   margin-bottom: 40px;
+   border-bottom: 1px solid #ececec;
+  }
+  &__link {
+   @include text (22px, 1.2, $textColor);
+   display: inline-block;
+   margin-bottom: 10px;
+   &:not(:last-child) {
+    margin-right: 60px;
+   }
+  }
+  &__link--active {
+   color: $titleColor;
+   position: relative;
+    &::before {
+     @include pseudo;
+     bottom: -11px;
+     right: 0;
+     width: 100%;
+     height: 1px;
+     background-color: $secondaryColor;
+    }
+  }
+  &__content-author {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+  }
+  &__author {
+   @include text (16px, 1.7, $titleColor);
+   @extend %roboto-400;
+   margin-right: 30px;
+  }
  }
  
 

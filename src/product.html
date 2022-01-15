@@ -154,36 +154,50 @@
        </p>
        <form class="product__form product__filter" action="#">
         <div class="product__color-filter">
-         <div class="product__color-title">
+         <h4 class="product__color-title"> 
           Color:
+         </h4>
           <label class="product__color-label">
            <input class="product__color-input" type="radio" name="color">
-           <span class="product__color-checkbox"></span>
+           <span class="product__color-checkbox">
+            <span style="background-color: #f49ac1;"></span>
+           </span>
           </label>
           <label class="product__color-label">
            <input class="product__color-input" type="radio" name="color">
-           <span class="product__color-checkbox"></span>
+           <span class="product__color-checkbox">
+            <span style="background-color: #e5e4e1;"></span>
+           </span>
           </label>
           <label class="product__color-label">
            <input class="product__color-input" type="radio" name="color">
-           <span class="product__color-checkbox"></span>
+           <span class="product__color-checkbox">
+            <span style="background-color: #ffbc41;"></span>
+           </span>
           </label>
           <label class="product__color-label">
            <input class="product__color-input" type="radio" name="color">
-           <span class="product__color-checkbox"></span>
+           <span class="product__color-checkbox">
+            <span style="background-color: #b370ff;"></span>
+           </span>
           </label>
           <label class="product__color-label">
            <input class="product__color-input" type="radio" name="color">
-           <span class="product__color-checkbox"></span>
+           <span class="product__color-checkbox">
+            <span style="background-color: #6fdf9e;"></span>
+           </span>
           </label>
           <label class="product__color-label">
            <input class="product__color-input" type="radio" name="color">
-           <span class="product__color-checkbox"></span>
+           <span class="product__color-checkbox">
+            <span style="background-color: #ff6060;"></span>
+           </span>
           </label>
-         </div>
         </div>
         <div class="product__size-filter">
-         <div class="product__size-title">
+         <h4 class="product__size-title">
+          Size
+         </h4>
           <label class="product__size-label">
            <input class="product__size-input" type="radio" name="size">
            <span class="product__size-checkbox">S</span>
@@ -208,7 +222,6 @@
            <input class="product__size-input" type="radio" name="size">
            <span class="product__size-checkbox">XXL</span>
           </label>
-         </div>
         </div>
         <div class="product__info">
          <ul class="product__list">
@@ -233,7 +246,7 @@
             Tags
            </div>
            <div class="product__list-text">
-            <a href="#">Fashion</a> | <a href="#">Woman</a> | <a href="#">Sale</a>
+            <a class="product__link" href="#">Fashion</a> | <a class="product__link" href="#">Woman</a> | <a class="product__link" href="#">Sale</a>
            </div>
           </li>
           <li class="product__list-item">
@@ -244,14 +257,14 @@
             <a class="product__list-link" href="#">
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px" viewBox="0 0 9 14" version="1.1">
               <g id="surface1">
-              <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 7.851562 7.875 L 8.25 5.339844 L 5.75 5.339844 L 5.75 3.695312 C 5.75 3.003906 6.097656 2.328125 7.21875 2.328125 L 8.355469 2.328125 L 8.355469 0.171875 C 8.355469 0.171875 7.324219 0 6.339844 0 C 4.277344 0 2.933594 1.214844 2.933594 3.410156 L 2.933594 5.339844 L 0.644531 5.339844 L 0.644531 7.875 L 2.933594 7.875 L 2.933594 14 L 5.75 14 L 5.75 7.875 Z M 7.851562 7.875 "/>
+              <path d="M 7.851562 7.875 L 8.25 5.339844 L 5.75 5.339844 L 5.75 3.695312 C 5.75 3.003906 6.097656 2.328125 7.21875 2.328125 L 8.355469 2.328125 L 8.355469 0.171875 C 8.355469 0.171875 7.324219 0 6.339844 0 C 4.277344 0 2.933594 1.214844 2.933594 3.410156 L 2.933594 5.339844 L 0.644531 5.339844 L 0.644531 7.875 L 2.933594 7.875 L 2.933594 14 L 5.75 14 L 5.75 7.875 Z M 7.851562 7.875 "/>
               </g>
               </svg>
             </a>
             <a class="product__list-link" href="#">
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
               <g id="surface1">
-              <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 12.5625 4.148438 C 12.570312 4.273438 12.570312 4.398438 12.570312 4.523438 C 12.570312 8.316406 9.683594 12.683594 4.40625 12.683594 C 2.78125 12.683594 1.269531 12.214844 0 11.398438 C 0.230469 11.425781 0.453125 11.433594 0.691406 11.433594 C 2.035156 11.433594 3.269531 10.980469 4.253906 10.207031 C 2.992188 10.179688 1.9375 9.355469 1.574219 8.21875 C 1.75 8.242188 1.925781 8.261719 2.113281 8.261719 C 2.371094 8.261719 2.628906 8.226562 2.871094 8.164062 C 1.554688 7.898438 0.570312 6.742188 0.570312 5.347656 L 0.570312 5.3125 C 0.949219 5.527344 1.394531 5.660156 1.867188 5.675781 C 1.09375 5.160156 0.585938 4.28125 0.585938 3.285156 C 0.585938 2.753906 0.726562 2.265625 0.976562 1.839844 C 2.390625 3.578125 4.511719 4.71875 6.894531 4.839844 C 6.847656 4.628906 6.824219 4.40625 6.824219 4.183594 C 6.824219 2.601562 8.101562 1.316406 9.691406 1.316406 C 10.519531 1.316406 11.265625 1.660156 11.789062 2.222656 C 12.4375 2.097656 13.058594 1.855469 13.609375 1.527344 C 13.394531 2.195312 12.941406 2.753906 12.347656 3.109375 C 12.925781 3.046875 13.484375 2.886719 14 2.664062 C 13.609375 3.234375 13.121094 3.738281 12.5625 4.148438 Z M 12.5625 4.148438 "/>
+              <path d="M 12.5625 4.148438 C 12.570312 4.273438 12.570312 4.398438 12.570312 4.523438 C 12.570312 8.316406 9.683594 12.683594 4.40625 12.683594 C 2.78125 12.683594 1.269531 12.214844 0 11.398438 C 0.230469 11.425781 0.453125 11.433594 0.691406 11.433594 C 2.035156 11.433594 3.269531 10.980469 4.253906 10.207031 C 2.992188 10.179688 1.9375 9.355469 1.574219 8.21875 C 1.75 8.242188 1.925781 8.261719 2.113281 8.261719 C 2.371094 8.261719 2.628906 8.226562 2.871094 8.164062 C 1.554688 7.898438 0.570312 6.742188 0.570312 5.347656 L 0.570312 5.3125 C 0.949219 5.527344 1.394531 5.660156 1.867188 5.675781 C 1.09375 5.160156 0.585938 4.28125 0.585938 3.285156 C 0.585938 2.753906 0.726562 2.265625 0.976562 1.839844 C 2.390625 3.578125 4.511719 4.71875 6.894531 4.839844 C 6.847656 4.628906 6.824219 4.40625 6.824219 4.183594 C 6.824219 2.601562 8.101562 1.316406 9.691406 1.316406 C 10.519531 1.316406 11.265625 1.660156 11.789062 2.222656 C 12.4375 2.097656 13.058594 1.855469 13.609375 1.527344 C 13.394531 2.195312 12.941406 2.753906 12.347656 3.109375 C 12.925781 3.046875 13.484375 2.886719 14 2.664062 C 13.609375 3.234375 13.121094 3.738281 12.5625 4.148438 Z M 12.5625 4.148438 "/>
               </g>
               </svg>
             </a>
@@ -259,7 +272,7 @@
             <a class="product__list-link" href="#">
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="17px" viewBox="0 0 13 17" version="1.1">
               <g id="surface1">
-              <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 6.90625 0.214844 C 3.433594 0.214844 0 2.488281 0 6.164062 C 0 8.5 1.339844 9.828125 2.152344 9.828125 C 2.488281 9.828125 2.679688 8.910156 2.679688 8.652344 C 2.679688 8.34375 1.878906 7.6875 1.878906 6.402344 C 1.878906 3.730469 3.949219 1.839844 6.632812 1.839844 C 8.9375 1.839844 10.644531 3.125 10.644531 5.484375 C 10.644531 7.25 9.921875 10.554688 7.585938 10.554688 C 6.742188 10.554688 6.023438 9.957031 6.023438 9.101562 C 6.023438 7.847656 6.917969 6.628906 6.917969 5.335938 C 6.917969 3.136719 3.738281 3.535156 3.738281 6.191406 C 3.738281 6.75 3.808594 7.367188 4.0625 7.875 C 3.59375 9.847656 2.640625 12.785156 2.640625 14.820312 C 2.640625 15.445312 2.730469 16.0625 2.792969 16.691406 C 2.90625 16.816406 2.851562 16.804688 3.027344 16.742188 C 4.734375 14.449219 4.671875 14 5.445312 11.003906 C 5.859375 11.78125 6.9375 12.199219 7.789062 12.199219 C 11.386719 12.199219 13 8.761719 13 5.664062 C 13 2.367188 10.09375 0.214844 6.90625 0.214844 Z M 6.90625 0.214844 "/>
+              <path d="M 6.90625 0.214844 C 3.433594 0.214844 0 2.488281 0 6.164062 C 0 8.5 1.339844 9.828125 2.152344 9.828125 C 2.488281 9.828125 2.679688 8.910156 2.679688 8.652344 C 2.679688 8.34375 1.878906 7.6875 1.878906 6.402344 C 1.878906 3.730469 3.949219 1.839844 6.632812 1.839844 C 8.9375 1.839844 10.644531 3.125 10.644531 5.484375 C 10.644531 7.25 9.921875 10.554688 7.585938 10.554688 C 6.742188 10.554688 6.023438 9.957031 6.023438 9.101562 C 6.023438 7.847656 6.917969 6.628906 6.917969 5.335938 C 6.917969 3.136719 3.738281 3.535156 3.738281 6.191406 C 3.738281 6.75 3.808594 7.367188 4.0625 7.875 C 3.59375 9.847656 2.640625 12.785156 2.640625 14.820312 C 2.640625 15.445312 2.730469 16.0625 2.792969 16.691406 C 2.90625 16.816406 2.851562 16.804688 3.027344 16.742188 C 4.734375 14.449219 4.671875 14 5.445312 11.003906 C 5.859375 11.78125 6.9375 12.199219 7.789062 12.199219 C 11.386719 12.199219 13 8.761719 13 5.664062 C 13 2.367188 10.09375 0.214844 6.90625 0.214844 Z M 6.90625 0.214844 "/>
               </g>
               </svg>
             </a>
@@ -267,892 +280,50 @@
           </li>
          </ul>
         </div>
-        <input type="number">
+        <input class="product__input" type="number" value="1">
         <button class="product__btn" type="submit">Add to cart</button>
        </form>
-
-
       </div>
      </div>
     </div>
-    <div class="product__tabs">
+    <div class="product-tabs">
+     <div class="product-tabs__top">
+      <a class="product-tabs__link" href="#tab-1">
+       Description
+      </a>
+      <a class="product-tabs__link" href="#tab-2">
+       Additional information
+      </a>
+      <a class="product-tabs__link product-tabs__link--active" href="#tab-3">
+       Reviews
+      </a>
+     </div>
+     <div class="product-tabs__content">
+      <div class="product-tabs__content-item" id="tab-1">
+        <div class="product-tabs__content-author">
+         <span class="product-tabs__author">Michle Jhon</span>
+         <span class="product-tabs__time">2 days ago</span>
+         <div class="products__star" data-rateyo-rating="4"></div>
+        </div>
+       <p class="product-tabs__content-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel facilisis.
+       </p>
+       <a class="product-tabs__content-reply" href="#">
+        Reply
+       </a>
+      </div>
+      <div class="product-tabs__content-item">
 
-    </div>
-    <div class="product__reviews">
+      </div>
+      <div class="product-tabs__content-item">
 
+      </div>
+     </div>
     </div>
    </div>
   </section>
 
-  <!-- <section class="shop">
-   <div class="container">
-    <div class="shop__inner">
-     <div class="shop__filters filter">
-
-      <div class="filter-search filter__item">
-       <h4 class="filter-search__title filter__title">
-        Search
-       </h4>
-       <form class="filter-search__form">
-        <input class="filter-search__field" type="text" placeholder="Search your keyword...." required>
-        <button class="filter-search__btn" type="submit">
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-          viewBox="0 0 23 24">
-          <path fill-rule="evenodd" fill="#29282d"
-           d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-         </svg>
-        </button>
-       </form>
-      </div>
-
-      <div class="filter-price filter__item">
-       <h4 class="filter-price__title filter__title">
-        Price Filter
-       </h4>
-       <form class="filter-price__form" action="#">
-        <input class="filter-price__field" type="text" data-min="0" data-max="999" data-from="200" data-to="700">
-        <label class="filter-price__label">
-         <span>
-          Price:
-          $<span class="filter-price__from"></span>
-          -
-          $<span class="filter-price__to"></span>
-         </span>
-         <button class="filter-price__btn" type="submit">
-          Filter
-         </button>
-        </label>
-       </form>
-      </div>
-
-      <div class="filter-color filter__item">
-       <h4 class="filter-color__title filter__title">
-        Color Filter
-       </h4>
-       <form class="filter-color__form" action="#">
-        <label class="filter-color__label">
-         <span class="filter-color__text">
-          Blue (15)
-         </span>
-         <div class="filter-color__box">
-          <input class="filter-color__input" type="checkbox">
-          <span class="filter-color__checkbox filter-color__checkbox--blue"></span>
-         </div>
-        </label>
-       </form>
-       <form class="filter-color__form" action="#">
-        <label class="filter-color__label">
-         <span class="filter-color__text">
-          Red (09)
-         </span>
-         <div class="filter-color__box">
-          <input class="filter-color__input" type="checkbox">
-          <span class="filter-color__checkbox filter-color__checkbox--red"></span>
-         </div>
-        </label>
-       </form>
-       <form class="filter-color__form" action="#">
-        <label class="filter-color__label">
-         <span class="filter-color__text">
-          Green (28)
-         </span>
-         <div class="filter-color__box">
-          <input class="filter-color__input" type="checkbox">
-          <span class="filter-color__checkbox filter-color__checkbox--green"></span>
-         </div>
-        </label>
-       </form>
-       <form class="filter-color__form" action="#">
-        <label class="filter-color__label">
-         <span class="filter-color__text">
-          Orange (11)
-         </span>
-         <div class="filter-color__box">
-          <input class="filter-color__input" type="checkbox">
-          <span class="filter-color__checkbox filter-color__checkbox--orange"></span>
-         </div>
-        </label>
-       </form>
-       <form class="filter-color__form" action="#">
-        <label class="filter-color__label">
-         <span class="filter-color__text">
-          Black (05)
-         </span>
-         <div class="filter-color__box">
-          <input class="filter-color__input" type="checkbox">
-          <span class="filter-color__checkbox filter-color__checkbox--black"></span>
-         </div>
-        </label>
-       </form>
-       <form class="filter-color__form" action="#">
-        <label class="filter-color__label">
-         <span class="filter-color__text">
-          Purple (21)
-         </span>
-         <div class="filter-color__box">
-          <input class="filter-color__input" type="checkbox">
-          <span class="filter-color__checkbox filter-color__checkbox--purple"></span>
-         </div>
-        </label>
-       </form>
-      </div>
-
-      <div class="filter-size filter__item">
-       <h4 class="filter-color__title filter__title">
-        Size Filter
-       </h4>
-       <form class="filter-size__form" action="#">
-        <label class="filter-size__label">
-         <input class="filter-size__input" type="checkbox" checked>
-         <span class="filter-size__checkbox"></span>
-         <span class="filter-size__text">
-          X-small
-         </span>
-        </label>
-       </form>
-       <form class="filter-size__form" action="#">
-        <label class="filter-size__label">
-         <input class="filter-size__input" type="checkbox" checked>
-         <span class="filter-size__checkbox"></span>
-         <span class="filter-size__text">
-          Small
-         </span>
-        </label>
-       </form>
-       <form class="filter-size__form" action="#">
-        <label class="filter-size__label">
-         <input class="filter-size__input" type="checkbox" checked>
-         <span class="filter-size__checkbox"></span>
-         <span class="filter-size__text">
-          Medium
-         </span>
-        </label>
-       </form>
-       <form class="filter-size__form" action="#">
-        <label class="filter-size__label">
-         <input class="filter-size__input" type="checkbox" checked>
-         <span class="filter-size__checkbox"></span>
-         <span class="filter-size__text">
-          Large
-         </span>
-        </label>
-       </form>
-       <form class="filter-size__form" action="#">
-        <label class="filter-size__label">
-         <input class="filter-size__input" type="checkbox" checked>
-         <span class="filter-size__checkbox"></span>
-         <span class="filter-size__text">
-          XXL
-         </span>
-        </label>
-       </form>
-      </div>
-
-      <div class="filter-category filter__item">
-       <h4 class="filter-category__title filter__title">
-        CATEGORY
-       </h4>
-       <form class="filter-category__form" action="#">
-        <label class="filter-category__label">
-         <input class="filter-category__input" type="checkbox">
-         <div class="filter-category__checkbox">
-          <span class="filter-category__text">Woman</span>
-          <span class="filter-category__text">48</span>
-         </div>
-        </label>
-        <label class="filter-category__label">
-         <input class="filter-category__input" type="checkbox">
-         <div class="filter-category__checkbox">
-          <span class="filter-category__text">Man</span>
-          <span class="filter-category__text">30</span>
-         </div>
-        </label>
-        <label class="filter-category__label">
-         <input class="filter-category__input" type="checkbox">
-         <div class="filter-category__checkbox">
-          <span class="filter-category__text">Sale Products</span>
-          <span class="filter-category__text">92</span>
-         </div>
-        </label>
-        <label class="filter-category__label">
-         <input class="filter-category__input" type="checkbox">
-         <div class="filter-category__checkbox">
-          <span class="filter-category__text">Fashion</span>
-          <span class="filter-category__text">121</span>
-         </div>
-        </label>
-        <label class="filter-category__label">
-         <input class="filter-category__input" type="checkbox">
-         <div class="filter-category__checkbox">
-          <span class="filter-category__text">Hot Dresses</span>
-          <span class="filter-category__text">52</span>
-         </div>
-        </label>
-        <label class="filter-category__label">
-         <input class="filter-category__input" type="checkbox">
-         <div class="filter-category__checkbox">
-          <span class="filter-category__text">Accessories</span>
-          <span class="filter-category__text">88</span>
-         </div>
-        </label>
-       </form>
-      </div>
-
-      <div class="filter-tags filter__item">
-       <h4 class="filter-tags__title filter__title">
-        Popular Tags
-       </h4>
-       <form class="filter-tags__form" action="#">
-        <label class="filter-tags__label">
-         <input class="filter-tags__input" type="checkbox">
-         <div class="filter-tags__checkbox">
-          <span class="filter-tags__text">
-           Sweetshirt
-          </span>
-         </div>
-        </label>
-        <label class="filter-tags__label">
-         <input class="filter-tags__input" type="checkbox">
-         <div class="filter-tags__checkbox">
-          <span class="filter-tags__text">
-           Man Accessories
-          </span>
-         </div>
-        </label>
-        <label class="filter-tags__label">
-         <input class="filter-tags__input" type="checkbox">
-         <div class="filter-tags__checkbox">
-          <span class="filter-tags__text">
-           Fashion
-          </span>
-         </div>
-        </label>
-        <label class="filter-tags__label">
-         <input class="filter-tags__input" type="checkbox">
-         <div class="filter-tags__checkbox">
-          <span class="filter-tags__text">
-           Polo
-          </span>
-         </div>
-        </label>
-        <label class="filter-tags__label">
-         <input class="filter-tags__input" type="checkbox">
-         <div class="filter-tags__checkbox">
-          <span class="filter-tags__text">
-           T-Shirt
-          </span>
-         </div>
-        </label>
-        <label class="filter-tags__label">
-         <input class="filter-tags__input" type="checkbox">
-         <div class="filter-tags__checkbox">
-          <span class="filter-tags__text">
-           Jewellery
-          </span>
-         </div>
-        </label>
-       </form>
-      </div>
-
-     </div>
-     <div class="shop__content">
-      <div class="shop__content-filter">
-       <div class="shop__content-buttons">
-        <span class="shop__content-span">
-         View
-        </span>
-        <button class="shop__content-btn shop__content-btn--active button-grid">
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"
-          viewBox="0 0 18 18">
-          <path fill-rule="evenodd" fill="#8d8d8d"
-           d="M1.9998779,5.749756 C1.9998779,5.749756 5.749878,5.749756 5.749878,5.749756 C5.749878,5.749756 5.749878,1.9998779 5.749878,1.9998779 C5.749878,1.9998779 1.9998779,1.9998779 1.9998779,1.9998779 C1.9998779,1.9998779 1.9998779,5.749756 1.9998779,5.749756 ZM7.624878,16.999878 C7.624878,16.999878 11.374878,16.999878 11.374878,16.999878 C11.374878,16.999878 11.374878,13.249756 11.374878,13.249756 C11.374878,13.249756 7.624878,13.249756 7.624878,13.249756 C7.624878,13.249756 7.624878,16.999878 7.624878,16.999878 ZM1.9998779,16.999878 C1.9998779,16.999878 5.749878,16.999878 5.749878,16.999878 C5.749878,16.999878 5.749878,13.249756 5.749878,13.249756 C5.749878,13.249756 1.9998779,13.249756 1.9998779,13.249756 C1.9998779,13.249756 1.9998779,16.999878 1.9998779,16.999878 ZM1.9998779,11.374939 C1.9998779,11.374939 5.749878,11.374939 5.749878,11.374939 C5.749878,11.374939 5.749878,7.624817 5.749878,7.624817 C5.749878,7.624817 1.9998779,7.624817 1.9998779,7.624817 C1.9998779,7.624817 1.9998779,11.374939 1.9998779,11.374939 ZM7.624878,11.374939 C7.624878,11.374939 11.374878,11.374939 11.374878,11.374939 C11.374878,11.374939 11.374878,7.624817 11.374878,7.624817 C11.374878,7.624817 7.624878,7.624817 7.624878,7.624817 C7.624878,7.624817 7.624878,11.374939 7.624878,11.374939 ZM13.249878,1.9998779 C13.249878,1.9998779 13.249878,5.749756 13.249878,5.749756 C13.249878,5.749756 16.999878,5.749756 16.999878,5.749756 C16.999878,5.749756 16.999878,1.9998779 16.999878,1.9998779 C16.999878,1.9998779 13.249878,1.9998779 13.249878,1.9998779 ZM7.624878,5.749756 C7.624878,5.749756 11.374878,5.749756 11.374878,5.749756 C11.374878,5.749756 11.374878,1.9998779 11.374878,1.9998779 C11.374878,1.9998779 7.624878,1.9998779 7.624878,1.9998779 C7.624878,1.9998779 7.624878,5.749756 7.624878,5.749756 ZM13.249878,11.374939 C13.249878,11.374939 16.999878,11.374939 16.999878,11.374939 C16.999878,11.374939 16.999878,7.624817 16.999878,7.624817 C16.999878,7.624817 13.249878,7.624817 13.249878,7.624817 C13.249878,7.624817 13.249878,11.374939 13.249878,11.374939 ZM13.249878,16.999878 C13.249878,16.999878 16.999878,16.999878 16.999878,16.999878 C16.999878,16.999878 16.999878,13.249756 16.999878,13.249756 C16.999878,13.249756 13.249878,13.249756 13.249878,13.249756 C13.249878,13.249756 13.249878,16.999878 13.249878,16.999878 Z" />
-         </svg>
-        </button>
-        <button class="shop__content-btn button-list">
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="17px"
-          viewBox="0 0 22 17">
-          <path fill-rule="evenodd" fill="#8d8d8d"
-           d="M1.0068359,1.0003052 C1.0068359,1.0003052 5.4294434,1.0003052 5.4294434,1.0003052 C5.4294434,1.0003052 5.4294434,5.172058 5.4294434,5.172058 C5.4294434,5.172058 1.0068359,5.172058 1.0068359,5.172058 C1.0068359,5.172058 1.0068359,1.0003052 1.0068359,1.0003052 ZM6.835022,1.0003052 C6.835022,1.0003052 20.993835,1.0003052 20.993835,1.0003052 C20.993835,1.0003052 20.993835,5.172058 20.993835,5.172058 C20.993835,5.172058 6.835022,5.172058 6.835022,5.172058 C6.835022,5.172058 6.835022,1.0003052 6.835022,1.0003052 ZM1.0068359,6.413513 C1.0068359,6.413513 5.4294434,6.413513 5.4294434,6.413513 C5.4294434,6.413513 5.4294434,10.585266 5.4294434,10.585266 C5.4294434,10.585266 1.0068359,10.585266 1.0068359,10.585266 C1.0068359,10.585266 1.0068359,6.413513 1.0068359,6.413513 ZM6.835022,6.413513 C6.835022,6.413513 20.993835,6.413513 20.993835,6.413513 C20.993835,6.413513 20.993835,10.585266 20.993835,10.585266 C20.993835,10.585266 6.835022,10.585266 6.835022,10.585266 C6.835022,10.585266 6.835022,6.413513 6.835022,6.413513 ZM1.0068359,11.82666 C1.0068359,11.82666 5.4294434,11.82666 5.4294434,11.82666 C5.4294434,11.82666 5.4294434,15.998413 5.4294434,15.998413 C5.4294434,15.998413 1.0068359,15.998413 1.0068359,15.998413 C1.0068359,15.998413 1.0068359,11.82666 1.0068359,11.82666 ZM6.835022,11.82666 C6.835022,11.82666 20.993835,11.82666 20.993835,11.82666 C20.993835,11.82666 20.993835,15.998413 20.993835,15.998413 C20.993835,15.998413 6.835022,15.998413 6.835022,15.998413 C6.835022,15.998413 6.835022,11.82666 6.835022,11.82666 Z" />
-         </svg>
-        </button>
-       </div>
-       <div class="shop__content-selects">
-        <select class="shop__content-sort select__style">
-         <option value="">Sort By Default</option>
-         <option value="">2</option>
-         <option value="">3</option>
-         <option value="">4</option>
-        </select>
-        <select class="shop__content-show select__style">
-         <option value="">Show 9</option>
-         <option value="">2</option>
-         <option value="">3</option>
-         <option value="">4</option>
-        </select>
-       </div>
-      </div>
-      <div class="shop__box">
-       <div class="products__item">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/blouse.jpg" alt="blouse">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="3.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/hoodie.jpg" alt="hoodie">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item products__item--sale">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/jacket.jpg" alt="jacket">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item products__item--sale">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/coat.jpg" alt="coat">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item products__item--sale">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/dress.jpg" alt="dress">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/long-dress.jpg" alt="long dress">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/sweater.jpg" alt="sweater">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item products__item--sale">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/summer-dress.jpg" alt="summer dress">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/pullover.jpg" alt="pullover">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-       <div class="products__item products__item--sale">
-        <div class="products__item-box">
-         <img class="products__image" src="assets/images/products/black-blouse.jpg" alt="black blouse">
-         <div class="products__links">
-          <a class="products__item-link products__item-link--line" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="24px"
-            viewBox="0 0 23 24">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M20.891968,20.696701 C20.891968,20.696701 15.082153,14.88665 15.082153,14.88665 C16.184082,13.525764 16.847412,11.79636 16.847412,9.913513 C16.847412,5.547718 13.295898,1.9966812 8.930786,1.9966812 C4.5654297,1.9966812 1.0140381,5.547718 1.0140381,9.913513 C1.0140381,14.2785 4.5654297,17.829937 8.930786,17.829937 C10.813721,17.829937 12.543213,17.16661 13.903809,16.065094 C13.903809,16.065094 19.713623,21.87474 19.713623,21.87474 C19.876343,22.037857 20.140137,22.037857 20.302979,21.87474 C20.302979,21.87474 20.891968,21.285522 20.891968,21.285522 C21.05481,21.12281 21.05481,20.859413 20.891968,20.696701 ZM8.930786,16.163364 C5.484253,16.163364 2.6807861,13.360233 2.6807861,9.913513 C2.6807861,6.4671936 5.484253,3.6632576 8.930786,3.6632576 C12.377197,3.6632576 15.180786,6.4671936 15.180786,9.913513 C15.180786,13.360233 12.377197,16.163364 8.930786,16.163364 Z" />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="23px"
-            viewBox="0 0 19 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M16.998596,18.293945 C16.998596,18.293945 15.854431,5.395508 15.854431,5.395508 C15.829956,5.1086426 15.588806,4.89209 15.306946,4.89209 C15.306946,4.89209 12.952881,4.89209 12.952881,4.89209 C12.920044,2.7402344 11.162964,1.0014648 9.005005,1.0014648 C6.847229,1.0014648 5.090027,2.7402344 5.057251,4.89209 C5.057251,4.89209 2.703247,4.89209 2.703247,4.89209 C2.4173584,4.89209 2.1802368,5.1086426 2.1557617,5.395508 C2.1557617,5.395508 1.0113525,18.293945 1.0113525,18.293945 C1.0113525,18.310791 1.0073242,18.32666 1.0073242,18.343506 C1.0073242,19.812256 2.3519287,21.006348 4.006958,21.006348 C4.006958,21.006348 14.002991,21.006348 14.002991,21.006348 C15.658264,21.006348 17.002869,19.812256 17.002869,18.343506 C17.002869,18.32666 17.002869,18.310791 16.998596,18.293945 C16.998596,18.293945 16.998596,18.293945 16.998596,18.293945 ZM9.005005,2.1062012 C10.553894,2.1062012 11.8168335,3.3503418 11.849365,4.89209 C11.849365,4.89209 6.1605835,4.89209 6.1605835,4.89209 C6.1933594,3.3503418 7.4560547,2.1062012 9.005005,2.1062012 C9.005005,2.1062012 9.005005,2.1062012 9.005005,2.1062012 ZM14.002991,19.9021 C14.002991,19.9021 4.006958,19.9021 4.006958,19.9021 C2.968872,19.9021 2.1272583,19.2146 2.1109009,18.36792 C2.1109009,18.36792 3.2059937,6.0007324 3.2059937,6.0007324 C3.2059937,6.0007324 5.0531616,6.0007324 5.0531616,6.0007324 C5.0531616,6.0007324 5.0531616,7.6779785 5.0531616,7.6779785 C5.0531616,7.9848633 5.298401,8.230469 5.6048584,8.230469 C5.911499,8.230469 6.1567383,7.9848633 6.1567383,7.6779785 C6.1567383,7.6779785 6.1567383,6.0007324 6.1567383,6.0007324 C6.1567383,6.0007324 11.849365,6.0007324 11.849365,6.0007324 C11.849365,6.0007324 11.849365,7.6779785 11.849365,7.6779785 C11.849365,7.9848633 12.0946045,8.230469 12.401062,8.230469 C12.70752,8.230469 12.952881,7.9848633 12.952881,7.6779785 C12.952881,7.6779785 12.952881,6.0007324 12.952881,6.0007324 C12.952881,6.0007324 14.80011,6.0007324 14.80011,6.0007324 C14.80011,6.0007324 15.899292,18.36792 15.899292,18.36792 C15.882935,19.2146 15.037109,19.9021 14.002991,19.9021 C14.002991,19.9021 14.002991,19.9021 14.002991,19.9021 ZM14.002991,19.9021 C14.002991,19.9021 " />
-           </svg>
-          </a>
-          <a class="products__item-link" href="#">
-           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px"
-            viewBox="0 0 24 23">
-            <path fill-rule="evenodd" fill="#29282d"
-             d="M21.77832,6.5888214 C21.096924,4.16951 19.095581,2.726059 17.605347,2.2177925 C15.901978,1.6229324 13.858154,2.2177925 12.0271,3.8291893 C10.196045,2.259678 8.152222,1.7075081 6.4489746,2.259678 C4.958618,2.8114433 2.9573975,4.2540894 2.276001,6.630707 C1.8076172,8.201023 1.7650146,10.747604 4.234741,13.845547 C5.341919,15.245903 7.045166,17.24112 8.450317,18.811035 C11.133057,21.825203 11.558716,21.993553 11.941895,21.993553 C11.984619,21.993553 11.984619,21.993553 12.0271,21.993553 C12.0271,21.993553 12.069702,21.993553 12.069702,21.993553 C12.069702,21.993553 12.112305,21.993553 12.112305,21.993553 C12.495605,21.993553 12.878784,21.825203 15.561401,18.769146 C16.966675,17.155735 18.669922,15.160519 19.776978,13.802856 C22.246704,10.705719 22.246704,8.158737 21.77832,6.5888214 ZM18.499634,12.784306 C16.540771,15.245903 13.177002,19.108261 12.0271,20.169506 C10.877441,19.108261 7.51355,15.245903 5.5546875,12.784306 C3.9366455,10.790295 3.3405762,8.837769 3.8515625,7.097492 C4.3624268,5.3153305 5.852783,4.2540894 6.959961,3.8726845 C8.194824,3.4054985 9.855469,4.0418396 11.388428,5.527981 C11.686523,5.8244057 12.112305,5.8666954 12.452881,5.6540413 C12.538086,5.612156 12.623291,5.56987 12.6657715,5.4844856 C14.19873,4.0418396 15.859619,3.4054985 17.09436,3.8291893 C18.201416,4.2540894 19.691772,5.3153305 20.202759,7.097492 C20.713623,8.795078 20.117554,10.790295 18.499634,12.784306 Z" />
-           </svg>
-          </a>
-         </div>
-        </div>
-        <div class="products__wrapper">
-         <div class="products__holder">
-          <div class="products__star" data-rateyo-rating="4.5"></div>
-          <h4 class="products__name">
-           White Polo Men’s T-Shirt
-          </h4>
-          <div class="products__price">
-           <span class="products__price-new">
-            $34.00
-           </span>
-           <span class="products__price-old">
-            $27.00
-           </span>
-          </div>
-         </div>
-         <div class="products__content-box">
-          <p class="products__content-text">
-           Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod  utlitoi labore et dolore magna aliqua.
-          </p>
-          <button class="products__content-btn">
-           Add to cart
-          </button>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="pagination">
-       <span class="pagination__prev pagination__arrow" href="#">
-        PREVIOUS
-       </span>
-       <ul class="pagination__list">
-        <li class="pagination__item">
-         <a class="pagination__link" href="#">
-          1
-         </a>
-        </li>
-        <li class="pagination__item">
-         <span class="pagination__link" href="#">
-          2
-         </span>
-        </li>
-        <li class="pagination__item">
-         <a class="pagination__link pagination__link--active" href="#">
-          3
-         </a>
-        </li>
-        <li class="pagination__item">
-         <span>
-          ....
-         </span>
-        </li>
-        <li class="pagination__item">
-         <a class="pagination__link" href="#">
-          10
-         </a>
-        </li>   
-       </ul>
-       <a class="pagination__next pagination__arrow" href="#">
-        NEXT
-       </a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section> -->
+  
  </main>
 
  <footer class="footer">

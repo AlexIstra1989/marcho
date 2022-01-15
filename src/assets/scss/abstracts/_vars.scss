@@ -33,14 +33,15 @@ $breakpoints: (
 }
 
 %btn {
- padding: 12px 26px;
+ padding: 12px 25px;
  letter-spacing: 0.2em;
  background-color: $secondaryColor;
  color: $primaryColor;
  box-shadow: 0px 10px 25px 0px rgba(254,62,87,0.3);
 }
 
-%checkbox-hidden {
+%checkbox-hidden,
+%radio-hidden {
  width: 1px;
  height: 1px;
  overflow: hidden;
