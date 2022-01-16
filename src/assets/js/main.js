@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+ $('.product-tabs__link').on('click', function(e){
+  e.preventDefault();
+  $('.product-tabs__link').removeClass('product-tabs__link--active');
+  $(this).addClass('product-tabs__link--active');
+  $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+  $($(this).attr('href')).addClass('product-tabs__content-item--active');
+ });
+
  $('.product__thumb').slick({
   asNavFor: '.product__big',
   focusOnSelect: true,
