@@ -214,17 +214,27 @@
      display: block;
    }
   }
-  &__content-author {
+  &__comments-box {
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   margin-bottom: 15px;
+  } 
+
+
+  &__star {
+  
   }
-  &__author {
-   @include text (16px, 1.7, $titleColor);
-   @extend %roboto-400;
-   margin-right: 30px;
-  }
+
+  // &__content-author {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  align-items: center;
+  //  margin-bottom: 15px;
+  // }
+  // &__author {
+  //  @include text (16px, 1.7, $titleColor);
+  //  @extend %roboto-400;
+  //  margin-right: 30px;
+  // }
  }
  
 
