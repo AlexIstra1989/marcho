@@ -1,0 +1,33 @@
+.related {
+ padding: 55px 0 120px;
+ &__title {
+  @include text (48px, 1.7, $titleColor);
+  @extend %roboto-700;
+  margin-bottom: 55px;
+  text-align: center;
+ }
+ &__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ &__item {
+  &:not(:last-child) {
+   margin-right: 28px;
+  }
+ }
+ &__image {
+  width: 270px;
+  height: 270px;
+  margin-bottom: 18px;
+ }
+ &__item-title {
+  @include text (18px, 1.2, $titleColor);
+  margin-bottom: 8px;
+  margin-top: 14px;
+  text-align: center;
+ }
+
+
+}
