@@ -1,0 +1,91 @@
+.blog-page {
+ padding: 120px 0 60px;
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__content {
+  max-width: 770px;
+  width: 100%;
+  margin-right: 30px;
+ }
+ &__aside {
+  max-width: 370px;
+  width: 100%;
+ }
+ &__item {
+  margin-bottom: 60px;
+ }
+ &__link {
+  display: block;
+ }
+ &__image {
+  max-width: 770px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+ }
+ &__item-box {
+  border: 1px solid #ececec;
+  border-top: none;
+  padding: 40px ;
+ }
+ &__item-title {
+  @include text (22px, 1.5, $titleColor);
+  @extend %roboto-700;
+  margin-bottom: 20px; 
+  transition: color 0.5s ease;
+   &:hover {
+    color: $secondaryColor;
+   }
+ }
+ &__item-info {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  margin-bottom: 20px;
+ }
+ &__item-author {
+  color: $textColor;
+  margin-right: 40px;
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background (url("../images/icons/user.svg"));
+   width: 20px;
+   height: 20px;
+   left: -23px;
+   bottom: 6px;
+  }
+ }
+ &__item-date {
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background (url("../images/icons/time.png"));
+   width: 20px;
+   height: 20px;
+   left: -23px;
+   bottom: 5px; 
+  }
+ }
+ &__slider-image {
+  max-width: 770px;
+  width: 100%;
+  height: 530px;
+ }
+
+ .slick-list {
+   max-width: 770px;
+   width: 100%;
+   height: 530px;
+ }
+ .slick-prev {
+  background-color: red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+ }
+  
+}

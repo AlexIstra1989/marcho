@@ -22,10 +22,25 @@
   height: 270px;
   margin-bottom: 18px;
  }
+ &__star {
+  margin: 0 auto;
+ }
  &__item-title {
   @include text (18px, 1.2, $titleColor);
   margin-bottom: 8px;
   margin-top: 14px;
+  text-align: center;
+ }
+ &__price {
+  text-align: center;
+ }
+ &__price-new,
+ &__price-now {
+  color: $titleColor;
+  font-weight: 600;
+ }
+ &__price-now {
+  display: block;
   text-align: center;
  }
 
