@@ -97,15 +97,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 7px 20px 0px rgba(254, 62,87, 0.3);
     path {
      fill: $primaryColor;
     }
+ }
+ .slick-disabled {
+  background-color: $primaryColor;
+  box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+   path {
+    fill: $secondaryColor;
+   }
  }
  .slick-prev {
   left: 40px;
  }
  .slick-next {
   right: 40px;
+ }  
+ &__person {
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+  padding: 40px 25px;
+  text-align: center;
  }
-  
+ &__person-image {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin: 0 auto 35px;
+ }
+ &__person-name {
+  @include text (18px, 1.2, $titleColor);
+  @extend %roboto-700;
+ }
+ &__person-position {
+  color: $secondaryColor;
+  margin-bottom: 25px;
+ }
+ &__person-text {
+  margin-bottom: 25px;
+ }
+ &__person-link {
+  margin-right: 25px;
+  path {
+   fill: $textColor;
+   transition: all 0.5s;
+  }
+  &:hover {
+   path {
+    fill: $secondaryColor;
+   }
+  }
+ }
 }
