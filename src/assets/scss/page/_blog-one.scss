@@ -1,0 +1,31 @@
+.blog-one {
+ &__box {
+  border: 1px solid #ececec;
+  border-top: none;
+  padding: 30px;
+ }
+ &__list {
+  display: flex;
+ }
+ &__item {
+  &:not(:last-child) {
+   margin-right: 30px;
+  }
+ }
+ &__link {
+  padding-left: 28px;
+  position: relative;
+  color: $textColor;
+   &::before {
+    @include pseudo;
+    @include background (url("../images/icons/calendar.svg"));
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 18px;
+   }
+   &--comments {
+    @include background (url("../images/icons/user-blog.svg"));
+   }
+ }
+}
