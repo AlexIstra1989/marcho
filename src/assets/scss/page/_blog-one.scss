@@ -2,17 +2,37 @@
  &__box {
   border: 1px solid #ececec;
   border-top: none;
-  padding: 30px;
+  padding: 40px;
+  margin-bottom: 25px;
+  h4 {
+   @include text (22px, 1.5, $titleColor);
+   @extend %roboto-700;
+   margin: 25px 0;
+  }
+  p {
+   margin: 25px 0;
+  }
+  blockquote {
+   @include text (22px, 1.5, $titleColor);
+   @extend %roboto-400;
+   background-color: $bg;
+   margin: 25px 0;
+   border-left: 3px solid $secondaryColor;
+   padding: 25px;
  }
+}
  &__list {
   display: flex;
+  margin-bottom: 26px;
  }
  &__item {
   &:not(:last-child) {
    margin-right: 30px;
   }
  }
- &__link {
+ &__link,
+ &__link--comments,
+ &__link--author {
   padding-left: 28px;
   position: relative;
   color: $textColor;
@@ -23,9 +43,83 @@
     left: 0;
     width: 16px;
     height: 18px;
-   }
-   &--comments {
-    @include background (url("../images/icons/user-blog.svg"));
+    cursor: pointer;
    }
  }
+ &__link--comments {
+  &::before {
+   @include background (url("../images/icons/comment.svg"));
+   width: 20px;
+  }
+ }
+ &__link--author {
+  &::before {
+   @include background (url("../images/icons/user-blog.svg"));
+  }
+ }
+ &__image-left {
+  float: left;
+  margin-right: 25px;
+ }
+ &__image-right {
+  float: right;
+  margin-left: 25px;
+ }
+ &__holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+ }
+ &__tags-title,
+ &__share-title {
+  @include text (16px, 1.5, $titleColor);
+  @extend %roboto-700;
+  margin-right: 20px;
+ }
+ &__tags-link {
+  color: $textColor;
+ } 
+ &__share-link {
+  vertical-align: middle;
+  path {
+   fill: $textColor;
+  }
+  &:hover {
+   path {
+    fill: $secondaryColor;
+   }
+  }
+  &:not(:last-child) {
+   margin-right: 20px;
+  }
+ }
+ &__author {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+ }
+ &__author-image {
+  width: 140px;
+  height: 140px;
+  margin-right: 30px;
+  object-fit: cover;
+ }
+ &__author-name {
+  @include text (22px, 1.5, $titleColor);
+  @extend %roboto-700;
+  margin-bottom: 24px;
+ }
+
+ &__form-title {
+  @include text (24px, 1.5, $titleColor);
+  @extend %roboto-700; 
+  margin: 35px 0 25px;
+  text-transform: uppercase;
+ }
+ .product-comments__form {
+  border-bottom: none;
+ }
+ 
 }
