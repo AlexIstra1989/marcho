@@ -18,8 +18,10 @@
   @extend %quicksand-500;
   margin: 35px 0;
  }
- &__email {
+ &__email,
+ &__tel {
   display: block;
+  color: $textColor;
  }
  &__social-list {
   display: flex;
