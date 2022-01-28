@@ -108,3 +108,26 @@
   }
  }
 }
+
+@media (max-width: 1050px) {
+ 
+}
+
+@media (max-width: 860px) {
+ .footer {
+  &__contacts {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 30px;
+  }
+ }
+}
+
+@media (max-width: 620px) {
+ .footer {
+  &__copyright {
+   justify-content: center;
+  }
+
+ }
+} 
