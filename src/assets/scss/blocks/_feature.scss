@@ -5,6 +5,8 @@
   }
   &__item {
    max-width: 370px;
+   padding: 60px 30px;
+   box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
   }
   &__image {
    margin-bottom: 40px;
@@ -17,4 +19,35 @@
   &__item-text {
    max-width: 285px;
   }
+}
+
+@media (max-width: 1200px) {
+ .feature {
+  &__item {
+   max-width: 330px;
+   padding: 20px;
+  }
+ } 
+}
+
+@media (max-width: 1050px) {
+ .feature {
+  &__inner {
+   display: block;
+  }
+  &__item {
+   max-width: 100%;
+  }
+  &__item-title {
+   margin: 20px 0 10px;
+  }
+ } 
+}
+
+@media (max-width: 375px) {
+ .feature {
+  &__item-title {
+   font-size: 20px;
+  }
+ } 
 }

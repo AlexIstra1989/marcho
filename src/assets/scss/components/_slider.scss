@@ -77,12 +77,51 @@
 @media (max-width: 1200px) {
  .slider {
   &__content {
-   padding-left: 0;
+   padding-left: 15px;
    padding-top: 40px;
   }
   &__image {
    width: 40%;
    object-fit: contain;
+  }
+ }
+}
+
+@media (max-width: 1050px) {
+ .slider {
+  &__item {
+    .slider__image {
+     display: none;
+   }
+  }
+  .slick-dots {
+   margin-top: 0;
+  }
+  &__content {
+   padding-top: 0;
+   padding-bottom: 50px;
+  }
+ }
+}
+
+@media (max-width: 620px) {
+ .slider {
+  padding: 45px 0 30px;
+   &__title {
+    font-size: 44px;
+    margin-bottom: 25px;
+   }
+ }
+}
+
+@media (max-width: 375px) {
+ .slider {
+  &__title {
+   font-size: 38px;
+   margin-bottom: 20px;
+  }
+  &__text {
+   margin-bottom: 30px;
   }
  }
 }
