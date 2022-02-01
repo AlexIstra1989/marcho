@@ -98,6 +98,7 @@
 
 @media (max-width: 1100px) {
  .category {
+  padding: 80px 0;
   &__title {
    font-size: 42px;
    margin-bottom: 20px;
@@ -131,6 +132,11 @@
 
 @media (max-width: 768px) {
  .category {
+  padding: 60px 0;
+  &__title {
+   font-size: 34px;
+   margin-bottom: 20px;
+  }
   &__inner {
    gap: 10px;
   }
@@ -160,7 +166,7 @@
   }
   &__arrival-box {
    padding: 40px 0 0 40px;
-   max-width: 252px;
+   max-width: 290px;
    width: 100%;
   }
  }
@@ -168,8 +174,21 @@
 
 @media (max-width: 620px) {
  .category {
+  &__title {
+   font-size: 28px;
+   margin-bottom: 10px;
+  }
+  &__text {
+   margin-bottom: 30px;
+  }
   &__inner {
-   min-height: 540px;
+   min-height: 450px;
+  }
+  &__discount-box,
+  &__arrival-box,
+  &__trending-box,
+  &__collection-box {
+   padding: 20px;
   }
   &__subtitle {
    font-size: 12px;
@@ -189,12 +208,6 @@
  .category {
   &__inner {
    min-height: 400px;
-  }
-  &__discount-box,
-  &__arrival-box,
-  &__trending-box,
-  &__collection-box {
-   padding: 20px;
   }
   &__subtitle {
    font-size: 9px;

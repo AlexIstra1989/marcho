@@ -52,3 +52,54 @@
   }
  }
 }
+
+@media (max-width: 1110px) {
+ .offer {
+  padding: 80px 0;
+  &__title {
+   font-size: 42px;
+   margin-bottom: 20px;
+  }
+ }
+ 
+}
+
+@media (max-width: 768px) {
+ .offer {
+  background-image: none;
+  background-color: #ececec;
+  padding: 60px 0;
+  &__inner {
+   margin: 0 auto;
+  }
+  &__subtitle {
+   font-size: 14px;
+   margin-bottom: 14px;
+  }
+  &__title {
+   font-size: 34px;
+   margin-bottom: 20px;
+  }
+  &__clock-item {
+   width: 60px;
+   height: 60px;
+    span {
+     font-size: 30px;
+     margin: 0;
+     line-height: 1;
+    }
+  }
+  &__text {
+   font-size: 12px;
+  }
+ }
+}
+
+@media (max-width: 620px) {
+ .offer {
+  &__title {
+   font-size: 28px;
+   margin-bottom: 10px;
+  }
+ }
+}

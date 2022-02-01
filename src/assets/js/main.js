@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+ $('.menu__burger-btn').on('click', function() {
+  $('.menu').toggleClass('menu--active'),
+  $('.menu__burger-btn').toggleClass('menu__burger-btn--active');
+ });
+
+ $('.menu__burger-btn').click(function (event) {
+  event.preventDefault();
+  $('body').toggleClass('overflow');
+});
+
  $('.product-tabs__link').on('click', function (e) {
   e.preventDefault();
   $('.product-tabs__link').removeClass('product-tabs__link--active');
@@ -114,7 +124,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 //var deadline = 'July 17 2017 07:59:59 GMT-0700';
-var deadline = '2022-02-01'
+var deadline = '2022-12-01'
 initializeClock('offer__clock', deadline);
 
 
