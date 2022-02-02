@@ -153,3 +153,13 @@
   }
  }
 } 
+
+@media (max-width: 375px) {
+ .footer {
+  &__form-input {
+   &::placeholder {
+    font-size: 11px;
+   }
+  } 
+ }
+}
