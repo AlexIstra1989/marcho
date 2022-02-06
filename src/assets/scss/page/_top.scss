@@ -13,3 +13,11 @@
    text-transform: uppercase;
   }
 }
+
+@media (max-width: 1100px) {
+ .top {
+  &__container {
+   background-position: left;
+  }
+ }
+}

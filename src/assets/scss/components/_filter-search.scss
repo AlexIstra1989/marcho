@@ -33,3 +33,23 @@
    }
  }
 }
+
+@media (max-width: 1150px) {
+ .filter-search {
+  &__field {
+   &::placeholder {
+    font-size: 12px;
+   }
+  }
+ }
+}
+
+@media (max-width: 920px) {
+ .filter-search {
+  &__field {
+   &::placeholder {
+    font-size: 9px;
+   }
+  }
+ }
+}

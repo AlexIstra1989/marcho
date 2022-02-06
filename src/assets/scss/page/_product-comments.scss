@@ -122,3 +122,21 @@
    }
  }
 }
+
+@media (max-width: 620px) {
+ .product-comments {
+  &__box-input {
+   display: block;
+  }
+  &__field {
+   width: 100%;
+   &:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+   }
+  }
+  &__textarea {
+   height: 200px;
+  }
+ }
+}

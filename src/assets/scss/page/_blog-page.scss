@@ -197,3 +197,41 @@
    }
   }
 }
+
+@media (max-width: 1100px) {
+ .blog-page {
+  padding: 80px 0;
+  &__content {
+   max-width: 600px;
+  }
+ }
+}
+
+@media (max-width: 920px) {
+ .blog-page {
+  &__content {
+   max-width: 450px;
+  }
+  &__post-item {
+   display: block;
+  }
+  &__post-link{
+   margin-bottom: 15px;
+  }
+  &__post-text {
+   font-size: 12px;
+  }
+ }
+}
+
+@media (max-width: 768px) {
+ .blog-page {
+  padding: 60px 0;
+  &__inner {
+   justify-content: center;
+  }
+  &__aside {
+   display: none;
+  }
+ }
+}

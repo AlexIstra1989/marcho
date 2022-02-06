@@ -121,5 +121,36 @@
  .product-comments__form {
   border-bottom: none;
  }
- 
+}
+
+@media (max-width: 768px) {
+ .blog-one {
+  &__box {
+   blockquote {
+    font-size: 18px;
+   }
+  }
+ }
+}
+
+@media (max-width: 620px) {
+ .blog-one {
+  &__list {
+   display: block;
+   text-align: center;
+  }
+  &__item {
+   &:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 7px;
+   }
+  }
+  &__holder {
+   display: block;
+   text-align: center;
+  }
+  &__tags {
+   margin-bottom: 20px;
+  }
+ }
 }
