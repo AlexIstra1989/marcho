@@ -5,8 +5,7 @@
   display: flex;
  }
  &__slide {
-  max-width: 730px;
-  width: 100%;
+  width: 730px;
   margin-right: 70px;
  }
  &__content {
@@ -217,6 +216,32 @@
     &.product-tabs__content-item--active {
      display: block;
    }
+  }
+ }
+}
+
+@media (max-width: 1150px) {
+ .product {
+  &__item-inner {
+  flex-direction: column;
+  align-items: center;
+  }
+  &__slide {
+   margin-right: 0;
+  }
+ }
+}
+
+@media (max-width: 992px) {
+ .product {
+  &__slide {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+  }
+  &__thumb {
+   width: 100%;
+   margin-right: 0;
   }
  }
 }
