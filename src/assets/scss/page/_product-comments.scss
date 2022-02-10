@@ -11,6 +11,7 @@
  }
  &__top {
   display: flex;
+  align-items: center;
   margin-bottom: 10px;
  }
  &__name {
@@ -123,6 +124,18 @@
  }
 }
 
+@media (max-width: 768px) {
+ .product-comments {
+  &__image {
+   min-width: 55px;
+   height: 55px;
+  }
+  &__name {
+   font-size: 10px;
+  }
+ }
+}
+
 @media (max-width: 620px) {
  .product-comments {
   &__box-input {
@@ -140,3 +153,14 @@
   }
  }
 }
+
+@media (max-width: 620px) {
+ .product-comments {
+  .product-comments {
+   &__name {
+    font-size: 8px;
+   }
+  }
+ }
+}
+
