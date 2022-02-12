@@ -65,5 +65,19 @@
    color: $secondaryColor;
   }
  }
- 
+}
+
+@media (max-width: 1100px) {
+ .register {
+  padding: 80px 0;
+ }
+}
+
+@media (max-width: 768px) {
+ .register {
+  padding: 60px 0;
+   &__link {
+    font-size: 18px;
+  }
+ }
 }

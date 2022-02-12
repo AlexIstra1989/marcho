@@ -284,5 +284,16 @@
   &__items {
    grid-template-columns: repeat(2, 1fr);
   }
+  &__name {
+   font-size: 14px;
+   margin-bottom: 10px;
+  }
+  &__content-text {
+   font-size: 9px; 
+  }
+  &__content-btn {
+   padding: 12px 20px;
+   font-size: 10px;
+  }
  }
 }

@@ -155,12 +155,15 @@
 }
 
 @media (max-width: 620px) {
- .product-comments {
   .product-comments {
    &__name {
     font-size: 8px;
    }
+   &__rating-title,
+   &__label {
+    display: block;
+    margin-bottom: 10px;
+   }
   }
- }
 }
 

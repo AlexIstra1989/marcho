@@ -34,3 +34,12 @@
    }
  }
 }
+
+@media (max-width: 620px) {
+ .error {
+  &__title {
+   line-height: 1;
+   margin-bottom: 20px;
+  }
+ }
+}

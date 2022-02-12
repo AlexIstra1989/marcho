@@ -97,8 +97,8 @@
 
 @media (max-width: 1050px) {
  .menu {
-  &__logo {
-   z-index: 22222;
+  .logo {
+   z-index: 3333333333;
   }
   &__list {
    position: absolute;
@@ -113,7 +113,7 @@
    height: 110vh;
    transform: translateY(-330%);
    transition: transform 0.5s ease;
-   z-index: 1;
+   z-index: 111;
   }
   .menu--active
   &__list {
@@ -127,7 +127,7 @@
   }
   &__burger-btn {
    display: block;
-   z-index: 111111;
+   z-index: 2222;
   }
   &__link {
    font-size: 22px;

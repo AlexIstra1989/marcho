@@ -22,6 +22,10 @@
  &__tel {
   display: block;
   color: $textColor;
+  transition: all 0.5s;
+   &:hover {
+    color: $secondaryColor;
+  }
  }
  &__social-list {
   display: flex;
@@ -45,10 +49,12 @@
  &__links {
   max-width: 145px;
   width: 100%;
+  margin-right: 20px;
  }
  &__account {
   max-width: 130px;
   width: 100%;
+  margin-right: 20px;
  }
  &__title {
   @include text (22px, 1.6, $titleColor);
@@ -126,7 +132,26 @@
   &__contacts {
   width: 100%;
   margin-right: 0;
-  margin-bottom: 30px;
+  }
+ }
+}
+
+@media (max-width: 768px) {
+ .footer {
+  &__contacts {
+   font-size: 12px;
+   margin: 20px 0;
+  }
+  &__title {
+   font-size: 16px;
+  }
+  &__link {
+   font-size: 12px;
+  }
+  &__form-input {
+   &::placeholder {
+    font-size: 12px;
+   }
   }
  }
 }
